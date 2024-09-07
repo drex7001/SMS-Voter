@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextMessageCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message Count"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message Content" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver Phone Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextSleepTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sleep Time (in milliseconds)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonSendMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Messages" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Progress: 0/0"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
